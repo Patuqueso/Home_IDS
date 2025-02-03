@@ -28,7 +28,7 @@ def save_packets():
 
 @app.route('/api/logs', methods=['GET'])
 def get_logs():
-    # Assuming `captured_packets` is the list where logs are stored
+    # Assuming captured_packets is the list where logs are stored
     return jsonify({"logs": captured_packets}), 200
 
 
